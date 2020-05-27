@@ -16,7 +16,7 @@
   <div class="text-center">
     <h1 class="text-4xl font-medium">About</h1>
   </div>
-  <div class="container mx-auto max-w-3xl my-10">
+  <div class="container mx-auto max-w-3xl px-4 my-10">
     <p class="pb-3">
       I am a full stack developer located in London, Ontario. I have 3 years experience with Vue.js, Node.js and designing RESTful applications. 
       I have worked on projects using mySQL and mongoDB databases, and have become efficient developing with effective, efficient database structures. 
@@ -26,16 +26,16 @@
       My education includes theoretical programming/data structures, as well as algorithm analysis, and software efficiency. 
       I have taken courses not limited to but including computer organization, databases, artificial intelligence, and project management.
     </p>
-    <div class="flex mt-3">
-      <div class="flex-1 text-center">
+    <div class="flex flex-wrap mt-3">
+      <div class="w-full sm:w-1/2 text-center">
         <img src="./profile.jpeg" class="w-9/12 mx-auto my-8 rounded" alt="">
         <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
           <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
           <span>Download Resume</span>
         </button>
       </div>
-      <div class="flex-1">
-        <ul>
+      <div class="w-full sm:w-1/2">
+        <ul class="mt-6 mx-5">
           <li>
             <div class="flex">
               <div class="flex-shrink mr-4 mt-2">
@@ -112,7 +112,7 @@
   <div class="text-center">
     <h1 class="text-4xl font-medium">Resume</h1>
   </div>
-  <div class="container mx-auto max-w-2xl my-10">
+  <div class="container mx-auto max-w-2xl px-4 my-10">
     <ul>
       <li>
         <h6 class="text-xs text-gray-800 uppercase">March 2020 - Present</h6>
