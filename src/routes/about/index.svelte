@@ -110,7 +110,7 @@
 
 <section class="bg-gray-100 py-10">
   <div class="text-center">
-    <h1 class="text-4xl font-medium">Resume</h1>
+    <h1 class="text-4xl font-medium">Work History</h1>
   </div>
   <div class="container mx-auto max-w-2xl px-4 my-10">
     <ul>

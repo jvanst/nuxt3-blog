@@ -21,8 +21,16 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-
-<div class='content'>
-	{@html post.html}
+<div class="container mx-auto mt-6 max-w-3xl px-3">
+  <div class="rounded overflow-hidden shadow">
+    <a rel='prefetch' href='post/{post.slug}'>
+      <img class="block h-32 w-full object-cover" src="{ post.img }" alt="{ post.title }">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{ post.title }</div>
+        <p class="text-gray-700 text-base">
+          {@html post.html}
+        </p>
+      </div>
+    </a>
+  </div>
 </div>
