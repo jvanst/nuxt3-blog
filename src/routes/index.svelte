@@ -1,8 +1,8 @@
 <script context="module">
-	export function preload({ params, query }) {
-		return this.fetch(`post.json`).then(r => r.json()).then(posts => {
-			return { posts };
-		});
+  export function preload({ params, query }) {
+		return this.fetch('/api/posts/').then(r => r.json()).then(posts => {
+      return { posts }
+    });
 	}
 </script>
 
