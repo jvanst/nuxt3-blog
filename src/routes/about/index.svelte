@@ -44,7 +44,7 @@
               </div>
               <div class="flex-none">
                 <h4 class="text-lg">Vue.js, Svelte & React</h4>
-                <h5 class="text-sm text-gray-700">Frontend Technology</h5>
+                <span class="text-sm text-gray-700">Frontend Technology</span>
               </div>
             </div>
           </li>
@@ -55,7 +55,7 @@
               </div>
               <div class="flex-none">
                 <h4 class="text-lg">NodeJs & PHP</h4>
-                <h5 class="text-sm text-gray-700">Backend Technology</h5>
+                <span class="text-sm text-gray-700">Backend Technology</span>
               </div>
             </div>
           </li>
@@ -66,7 +66,7 @@
               </div>
               <div class="flex-none">
                 <h4 class="text-lg">RESTful JSON</h4>
-                <h5 class="text-sm text-gray-700">API Design</h5>
+                <span class="text-sm text-gray-700">API Design</span>
               </div>
             </div>
           </li>
@@ -77,7 +77,7 @@
               </div>
               <div class="flex-none">
                 <h4 class="text-lg">MySQL</h4>
-                <h5 class="text-sm text-gray-700">Database</h5>
+                <span class="text-sm text-gray-700">Database</span>
               </div>
             </div>
           </li>
@@ -88,7 +88,7 @@
               </div>
               <div class="flex-none">
                 <h4 class="text-lg">Kubernetes & Docker</h4>
-                <h5 class="text-sm text-gray-700">Devops</h5>
+                <span class="text-sm text-gray-700">Devops</span>
               </div>
             </div>
           </li>
@@ -99,7 +99,7 @@
               </div>
               <div class="flex-none">
                 <h4 class="text-lg">Git & Github</h4>
-                <h5 class="text-sm text-gray-700">Version control</h5>
+                <span class="text-sm text-gray-700">Version control</span>
               </div>
             </div>
           </li>
