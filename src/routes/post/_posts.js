@@ -10,7 +10,7 @@
 const posts = [
 	{
     title: 'Svelte - Initial Impressions',
-    img: 'posts/svelte-inital-impressions-header.jpg',
+    img: 'posts/svelte.webp',
 		slug: 'svelte-initial-impressions',
 		categories: ['webdev', 'frameworks'],
 		summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin blandit libero non tincidunt. Maecenas lobortis rhoncus elit, a egestas risus sagittis quis.',

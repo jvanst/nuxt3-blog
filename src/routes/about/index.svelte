@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>About - James Vansteenkiste</title>
+  <meta name="Description" content="Learn more about me. This is my resume in webpage format.">
 </svelte:head>
 
 <div class="relative" style="height: 500px">
@@ -115,7 +116,7 @@
   <div class="container mx-auto max-w-2xl px-4 my-10">
     <ul>
       <li>
-        <h6 class="text-xs text-gray-800 uppercase">March 2020 - Present</h6>
+        <span class="text-xs text-gray-800 uppercase">March 2020 - Present</span>
         <h2 class="text-2xl">RaceRoster</h2>
         <h3 class="text-lg text-gray-800">Software Developer</h3>
         <p class="mt-2">
@@ -124,7 +125,7 @@
         <span class="border-vertical"></span>
       </li>
       <li>
-        <h6 class="text-xs text-gray-800 uppercase">MAY 2017 - MARCH 2020</h6>
+        <span class="text-xs text-gray-800 uppercase">MAY 2017 - MARCH 2020</span>
         <h2 class="text-2xl">Sport-Travel</h2>
         <h3 class="text-lg text-gray-800">Lead Software Developer</h3>
         <p class="mt-2">
@@ -135,7 +136,7 @@
         <span class="border-vertical"></span>
       </li>
       <li>
-        <h6 class="text-xs text-gray-800 uppercase">2015 - 2016</h6>
+        <span class="text-xs text-gray-800 uppercase">2015 - 2016</span>
         <h2 class="text-2xl">DukeToyCo</h2>
         <h3 class="text-lg text-gray-800">Web Developer Consultant</h3>
         <p class="mt-2">
@@ -144,7 +145,7 @@
         <span class="border-vertical"></span>
       </li>
       <li>
-        <h6 class="text-xs text-gray-800 uppercase">2013 - 2017</h6>
+        <span class="text-xs text-gray-800 uppercase">2013 - 2017</span>
         <h2 class="text-2xl">University of Western Ontario</h2>
         <h3 class="text-lg text-gray-800">Studied Computer Science</h3>
       </li>

@@ -14,6 +14,7 @@
 
 <svelte:head>
 	<title>James Vansteenkiste</title>
+  <meta name="Description" content="Follow my work, and my thoughts about web applications, frameworks and code.">
 </svelte:head>
 
 <div class="container mx-auto mt-6 max-w-3xl px-3">
