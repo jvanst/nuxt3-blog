@@ -25,9 +25,9 @@ jobs:
       - image: google/cloud-sdk
     working_directory: ~/app
     steps:
+      - checkout
       - attach_workspace:
           at: ~/app
-      - checkout
       - run: |
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
