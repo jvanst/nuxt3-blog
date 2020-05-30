@@ -11,7 +11,7 @@ jobs:
       - node/with-cache:
           steps:
             - attach_workspace:
-              at: ~/app
+                at: ~/app
             - run: npm install
             - run: npm run build
             - persist_to_workspace:
@@ -26,7 +26,7 @@ jobs:
     working_directory: ~/app
     steps:
       - attach_workspace:
-        at: ~/app
+          at: ~/app
       - checkout
       - run: |
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
