@@ -5,21 +5,33 @@ jobs:
   build:
     executor:
       name: node/default
+    working_directory: ~/app
     steps:
       - checkout
       - node/with-cache:
           steps:
+            - attach_workspace:
+                at: ~/app
             - run: npm install
             - run: npm run build
+            - persist_to_workspace:
+                root: .
+                paths: 
+                  - __sapper__
+                  - src/node_modules
+                  - node_modules
   deploy:
     docker:
       - image: google/cloud-sdk
+    working_directory: ~/app
     steps:
       - checkout
+      - attach_workspace:
+          at: ~/app
       - run: |
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
-      - run: gcloud app deploy 
+      - run: gcloud app deploy
 
 workflows:
     build-and-deploy:
