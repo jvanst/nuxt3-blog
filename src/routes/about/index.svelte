@@ -160,48 +160,48 @@
   <div class="container mx-auto max-w-2xl px-4 my-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="relative shadow-xs p-4">
-        <h3 class="text-lg font-bold pb-2">jamesvan-ca</h3>
+        <span class="text-lg font-bold pb-2">jamesvan-ca</span>
         <p class="text-sm pb-10">
           A server-side rendered Svelte/Sapper app deployed to Google App Engine. 
         </p>
         <p class="absolute bottom-0 w-full text-right pb-4 pr-8">
-          <a href="https://github.com/jvanst/jamesvan-ca" target="_blank" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
+          <a href="https://github.com/jvanst/jamesvan-ca" target="_blank" rel="noopener" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
             <span>Source</span>
             <img src="./icons/open-in-new.svg" class="w-4 ml-2" alt="Open in new tab">
           </a>
         </p>
       </div>
       <div class="relative shadow-xs p-4">
-        <h3 class="text-lg font-bold pb-2">vue-vuetify-ssr</h3>
+        <span class="text-lg font-bold pb-2">vue-vuetify-ssr</span>
         <p class="text-sm pb-10">
           A template for building server-side rendered Vue apps with the Vuetify component library.
         </p>
         <p class="absolute bottom-0 w-full text-right pb-4 pr-8">
-          <a href="https://github.com/jvanst/vue-vuetify-ssr" target="_blank" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
+          <a href="https://github.com/jvanst/vue-vuetify-ssr" target="_blank" rel="noopener" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
             <span>Source</span>
             <img src="./icons/open-in-new.svg" class="w-4 ml-2" alt="Open in new tab">
           </a>
         </p>
       </div>
       <div class="relative shadow-xs p-4">
-        <h3 class="text-lg font-bold pb-2">battalion-dedicated-server</h3>
+        <span class="text-lg font-bold pb-2">battalion-dedicated-server</span>
         <p class="text-sm pb-10">
           A Battalion1944 linux server installation and update command line tool written in python.
         </p>
         <p class="absolute bottom-0 w-full text-right pb-4 pr-8">
-          <a href="https://github.com/jvanst/battalion-dedicated-server" target="_blank" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
+          <a href="https://github.com/jvanst/battalion-dedicated-server" target="_blank" rel="noopener" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
             <span>Source</span>
             <img src="./icons/open-in-new.svg" class="w-4 ml-2" alt="Open in new tab">
           </a>
         </p>
       </div>
       <div class="relative shadow-xs p-4">
-        <h3 class="text-lg font-bold pb-2">banksole</h3>
+        <span class="text-lg font-bold pb-2">banksole</span>
         <p class="text-sm pb-10">
           A mock banking console application for Linux.
         </p>
         <p class="absolute bottom-0 w-full text-right pb-4 pr-8">
-          <a href="https://github.com/jvanst/banksole" target="_blank" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
+          <a href="https://github.com/jvanst/banksole" target="_blank" rel="noopener" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
             <span>Source</span>
             <img src="./icons/open-in-new.svg" class="w-4 ml-2" alt="Open in new tab">
           </a>
