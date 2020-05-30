@@ -16,6 +16,7 @@ jobs:
                 paths: 
                   - __sapper__
                   - src/node_modules
+                  - node_modules
   deploy:
     docker:
       - image: google/cloud-sdk
