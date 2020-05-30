@@ -11,6 +11,11 @@ jobs:
           steps:
             - run: npm install
             - run: npm run build
+            - persist_to_workspace:
+                root: .
+                paths: 
+                  - __sapper__
+                  - src/node_modules
   deploy:
     docker:
       - image: google/cloud-sdk
@@ -28,6 +33,3 @@ workflows:
         - deploy:
             requires:
               - build
-            filters:
-              branches:
-                only: master
