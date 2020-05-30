@@ -11,7 +11,14 @@ jobs:
           steps:
             - run: npm install
             - run: npm run build
+  deploy:
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - run: gcloud app deploy
+    
 workflows:
-    build-and-test:
+    build-and-deploy:
       jobs:
         - build
+        - deploy
