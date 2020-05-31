@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About - James Vansteenkiste</title>
+	<title>James Vansteenkiste</title>
   <meta name="Description" content="Learn more about me. This is my resume in webpage format.">
 </svelte:head>
 

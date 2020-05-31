@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>James Vansteenkiste</title>
+	<title>Blog - James Vansteenkiste</title>
   <meta name="Description" content="Follow my work, and my thoughts about web applications, frameworks and code.">
 </svelte:head>
 
