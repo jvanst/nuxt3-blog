@@ -3,7 +3,7 @@
 </script>
 
 <div class="rounded overflow-hidden shadow">
-  <a rel='prefetch' href='post/{post.slug}'>
+  <a rel='prefetch' href='blog/post/{post.slug}'>
     <img class="block h-32 w-full object-cover" src="{ post.img }" alt="{ post.title }">
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{ post.title }</div>

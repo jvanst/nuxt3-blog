@@ -2,20 +2,26 @@
   export let segment
 </script>
 
-<nav class="flex items-center flex-wrap p-4 fixed w-full bg-white z-10 shadow-md">
-    <span class="hidden font-semibold text-xl tracking-tight md:hidden">James Vansteenkiste</span>
-    <div class="text-sm flex-grow">
-      <a 
-        aria-current='{segment === undefined ? "page" : undefined}'
-        class="block mr-4 inline-block"
-        rel="prefetch"
-        href='.'>
-        Home</a>
-      <a
-        aria-current='{segment === "about" ? "page" : undefined}'
-        class="block inline-block"
-        href='about'>
-        About
-      </a>
-    </div>
+<nav class="fixed w-full p-4 z-20 bg-white shadow">
+  <div class="flex max-w-3xl mx-auto">
+      <span class="inline-flex flex-shrink font-semibold text-xl tracking-tight">
+        James Vansteenkiste
+      </span>
+      <div class="inline-flex flex-grow text-sm mt-1">
+        <div class="w-full text-right">
+          <a 
+            aria-current='{segment === undefined ? "page" : undefined}'
+            class="block mr-4 inline-block"
+            href='.'>
+            Home</a>
+          <a
+            aria-current='{segment === "blog" ? "page" : undefined}'
+            class="block inline-block"
+            rel="prefetch"
+            href='blog'>
+            Blog
+          </a>
+        </div>
+      </div>
+  </div>
 </nav>
