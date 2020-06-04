@@ -5,15 +5,6 @@
 
 <div class="relative" style="height: 500px">
   <img src="./computer_background.webp" class="w-full h-full object-cover absolute z-0" alt="">
-  <div class="absolute w-full text-center mt-6 z-10">
-    <div class="p-2 bg-blue-700 items-center text-indigo-100 leading-none rounded-full flex inline-flex mx-auto shadow-lg" role="alert">
-      <span class="flex rounded-full bg-blue-900 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
-      <span class="font-semibold mr-2 text-left flex-auto">
-        <a href="blog" rel="prefetch">Read my development blog</a>
-      </span>
-      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </div>
-  </div>
   <div class="relative h-full flex items-end pb-10">
     <div class="flex-1 text-center">
       <h1 class="text-4xl text-white font-medium">James Vansteenkiste</h1>

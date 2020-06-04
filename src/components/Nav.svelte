@@ -1,5 +1,5 @@
 <script>
-  export let segment
+  // export let segment
 </script>
 
 <nav class="fixed w-full p-4 z-20 bg-white shadow">
@@ -9,7 +9,7 @@
       </span>
       <div class="inline-flex flex-grow text-sm mt-1">
         <div class="w-full text-right">
-          <a 
+          <!-- <a 
             aria-current='{segment === undefined ? "page" : undefined}'
             class="block mr-4 inline-block"
             href='.'>
@@ -20,7 +20,7 @@
             rel="prefetch"
             href='blog'>
             Blog
-          </a>
+          </a> -->
         </div>
       </div>
   </div>
