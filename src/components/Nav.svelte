@@ -2,7 +2,7 @@
   // export let segment
 </script>
 
-<nav class="fixed w-full p-4 z-20 bg-white shadow">
+<nav class="w-full p-4 z-20 bg-white shadow">
   <div class="flex max-w-3xl mx-auto">
       <span class="inline-flex flex-shrink font-semibold text-xl tracking-tight">
         James Vansteenkiste

@@ -8,7 +8,7 @@
   <div class="relative h-full flex items-end pb-10">
     <div class="flex-1 text-center">
       <h1 class="text-4xl text-white font-medium">James Vansteenkiste</h1>
-      <h2 class="text-2xl text-white">Full Stack Developer</h2>
+      <h2 class="text-2xl text-white">Software Developer</h2>
     </div>
   </div>
 </div>
@@ -19,13 +19,23 @@
   </div>
   <div class="container mx-auto max-w-3xl px-4 my-8">
     <p class="pb-3">
-      I am a full stack developer located in London, Ontario. I have 3 years experience with Vue.js, Node.js and designing RESTful applications. 
-      I have worked on projects using mySQL and mongoDB databases, and have become efficient developing with effective, efficient database structures. 
-      Front-end design and efficiency is a key aspect of my toolkit, my projects are lightweight, feature rich, and responsive.
+      From a young age, my parents knew I would have a future with technology. 
+      This idea probably formed from their many groundings given from finding me past curfew on the computer. 
     </p>
-    <p>
-      My education includes theoretical programming/data structures, as well as algorithm analysis, and software efficiency. 
-      I have taken courses not limited to but including computer organization, databases, artificial intelligence, and project management.
+     <p class="pb-3">
+      I was fortunate with access to home computers and the support of my parents to build my own, while in elementary school. 
+      My passion was first sparked by the world of video games, but quickly transformed into excitement around hosting and managing dedicated linux game servers. 
+      After understanding the difficulties of managing servers from command line I began my journey into web development. 
+      I created tools that would help friends manage server instances from a webpage. 
+    </p>
+    <p class="pb-3">
+      It was junior year high school, I started to realize that software development was the career path I wanted to pursue. 
+      With an interest in web development and server administration I was dead set to take computer science at university. 
+      A background in computer science has primed me with tools and the knowledge to build web applications that exceed expectations. 
+    </p>
+    <p class="pb-3">
+      Now in industry, this passion remains. I constantly push myself to understand new technologies to deliver the best experiences possible. 
+      There is certainly a mountain more to learn, and more problems to solve; knowing this is what keeps me enthusiastic and drives me everyday. 
     </p>
     <div class="flex flex-wrap mt-3">
       <div class="w-full sm:w-1/2 text-center">
@@ -120,7 +130,7 @@
         <h2 class="text-2xl">RaceRoster</h2>
         <h3 class="text-lg text-gray-800">Software Developer</h3>
         <p class="mt-2">
-          Fullstack developer role helping push the legacy code base into more modern and sustainable technologies and design patterns.
+          Fullstack developer pushing the legacy code base into more modern technologies and design patterns.
         </p>
         <span class="border-vertical"></span>
       </li>
@@ -129,9 +139,11 @@
         <h2 class="text-2xl">Sport-Travel</h2>
         <h3 class="text-lg text-gray-800">Lead Software Developer</h3>
         <p class="mt-2">
-          Hired to develop in-house software using Node.js and Vue.js. Lead developer of Tournkey Tournament System. 
-          Tournkey is an 'intuitive system designed to mitigate the difficulties of managing youth and amateur sporting events'. 
-          Tournkey was developed as a progress web app built Vue.js and Vuetify. Resftul API is handled with Node and Express.js.
+          I lead the software department at Sport-Travel where I pushed the team to develop scalable lightweight, progressive web applications. 
+          I approached leadership by encouraging idea sharing and regular employee participation. While also trying to lead by going above and beyond.
+          <br><br>
+          Our stack was build on Vue.js, Node.js deployed with CircleCI to Kubernetes on Google Cloud.
+           Our data was stored relationally in mySQL with additional request caching and idempotency keys managed by redis.
         </p>
         <span class="border-vertical"></span>
       </li>
@@ -227,7 +239,7 @@
         <a href="https://github.com/jvanst"><img src="./icons/github.svg" class="w-6 mr-2 pb-1 inline-block" alt="">Explore my code</a>
       </div>
       <div class="text-center">
-        <a href="https://twitter.com/JamesRyanVan"><img src="./icons/twitter.svg" class="w-6 mr-2 pb-1 inline-block" alt="">Tweet at me</a>
+        <a href="https://twitter.com/jrvansteenkiste"><img src="./icons/twitter.svg" class="w-6 mr-2 pb-1 inline-block" alt="">Tweet at me</a>
       </div>
     </div>
   </div>
