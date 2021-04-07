@@ -17,8 +17,8 @@ jobs:
             - persist_to_workspace:
                 root: .
                 paths: 
-                  - __sapper__
-                  - src/node_modules
+                  - .svelte
+                  - build
                   - node_modules
   deploy:
     docker:
