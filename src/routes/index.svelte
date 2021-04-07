@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Counter from '$lib/Counter.svelte';
+</script>
+
 <svelte:head>
 	<title>James Vansteenkiste</title>
   <meta name="Description" content="Learn more about me. This is my resume in webpage format.">
@@ -170,6 +174,20 @@
     <h1 class="text-3xl font-medium">Portfolio</h1>
   </div>
   <div class="container mx-auto max-w-3xl px-4 my-8">
+    <div class="grid grid-cols-1 gap-4 pb-3">
+      <div class="relative shadow-xs bg-gray-50 p-4">
+        <span class="text-lg font-bold pb-2">radiants.gg</span>
+        <p class="text-sm pb-10">
+          An A.I. driven insight platform for esport players. I am building a product that doesn't just post raw data with no applicability for players but allows players to delve deeper. We plan to provide analysis and insight to users to help increase their rank, adapt to the latest meta changes, and build dynamic team composition.
+        </p>
+        <p class="absolute bottom-0 w-full text-right pb-4 pr-8">
+          <a href="https://radiants.gg" target="_blank" rel="noopener" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
+            <span>View</span>
+            <img src="./icons/open-in-new.svg" class="w-4 ml-2" alt="Open in new tab">
+          </a>
+        </p>
+      </div>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="relative shadow-xs p-4">
         <span class="text-lg font-bold pb-2">jamesvan-ca</span>
@@ -228,10 +246,7 @@
     <h1 class="text-3xl font-medium text-white">Even more</h1>
   </div>
   <div class="container mx-auto max-w-4xl px-4 my-8">
-    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 m-auto text-white text-lg">
-      <div class="text-center">
-        <a href="/blog" class="mt-3"><img src="./icons/post-outline.svg" class="w-6 mr-2 pb-1 inline-block" alt="">Follow my blog</a>
-      </div>
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-4 m-auto text-white text-lg">
       <div class="text-center">
         <a href="https://ca.linkedin.com/in/jamesvansteenkiste"><img src="./icons/linkedin.svg" class="w-6 mr-2 pb-1 inline-block" alt="">Connect with me</a>
       </div>
