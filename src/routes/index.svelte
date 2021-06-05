@@ -23,23 +23,27 @@
   </div>
   <div class="container mx-auto max-w-3xl px-4 my-8">
     <p class="pb-3">
-      From a young age, my parents knew I would have a future with technology. 
-      This idea probably formed from their many groundings given from finding me past curfew on the computer. 
+      From a young age, my parents knew I would have a future with technology.
+      This idea probably formed from the many instances they had to ground me after finding me on the computer past curfew.
     </p>
      <p class="pb-3">
-      I was fortunate with access to home computers and the support of my parents to build my own, while in elementary school. 
-      My passion was first sparked by the world of video games, but quickly transformed into excitement around hosting and managing dedicated linux game servers. 
-      After understanding the difficulties of managing servers from command line I began my journey into web development. 
-      I created tools that would help friends manage server instances from a webpage. 
+      While in elementary school I was fortunate to have access to computers at home, 
+      as well as the support of my parents to build my own computer. 
+      My passion for software development was first sparked by the world of video games, 
+      but quickly transformed into excitement around hosting and managing dedicated linux game servers. 
+      After understanding the difficulties of managing servers from the command line I began my journey into web development
+      by creating tools that would help friends manage server instances from webpages.
     </p>
     <p class="pb-3">
-      It was junior year high school, I started to realize that software development was the career path I wanted to pursue. 
-      With an interest in web development and server administration I was dead set to take computer science at university. 
-      A background in computer science has primed me with tools and the knowledge to build web applications that exceed expectations. 
+      In junior year of high school, I realized that software development was the career path I wanted to pursue.
+      With an interest in web development and server administration I was keen on studying computer science at university.
+      A background in computer science has primed me with tools and the knowledge to build web applications that exceed expectations.
     </p>
     <p class="pb-3">
-      Now in industry, this passion remains. I constantly push myself to understand new technologies to deliver the best experiences possible. 
-      There is certainly a mountain more to learn, and more problems to solve; knowing this is what keeps me enthusiastic and drives me everyday. 
+      Now working in industry, this passion remains. 
+      I constantly push myself to understand new technologies to deliver the best experiences possible. 
+      There is certainly a mountain more to learn, and more problems to solve; 
+      knowing this is what keeps me enthusiastic and drives me everyday.
     </p>
     <div class="flex flex-wrap mt-3">
       <div class="w-full sm:w-1/2 text-center">
@@ -142,9 +146,10 @@
           <h3 class="text-lg text-gray-800">Software Developer</h3>
           <p class="mt-2">
             At RaceRoster, I spend time where needed to refactor and push the code base into more modern technologies and design patterns. 
-            I'm particularly excited to help improve the developer experience in newer projects by containerizing applications, improving continous integration, and automate testing.
+            I'm particularly excited to help improve the developer experience in newer projects by containerizing applications, 
+            improving continuous integration, and automate testing.
             <br><br>
-            Common tools include React for the front-end experience, and PHP for backend with increasing shift to Node.js serving RESTful JSON. 
+            Common tools include React for the front-end experience, and PHP for backend with increasing shift to Node.js serving RESTful JSON.
           </p>
           <span class="border-vertical"></span>
         </div>
@@ -161,7 +166,7 @@
             I led the software department at Sport-Travel where I pushed the team to develop scalable lightweight, progressive web applications. 
             I approached leadership by encouraging idea sharing and regular employee participation. While also trying to lead by going above and beyond.
             <br><br>
-            Our stack was build on Vue.js, Node.js deployed with CircleCI to Kubernetes on Google Cloud. 
+            Our stack was built on Vue.js, Node.js deployed with CircleCI to Kubernetes on Google Cloud. 
             Our data was stored relationally in MySQL with additional request caching and idempotency keys managed by redis.
           </p>
           <span class="border-vertical"></span>
@@ -176,7 +181,7 @@
           <h2 class="text-2xl">Sport-Travel</h2>
           <h3 class="text-lg text-gray-800">Software Developer</h3>
           <p class="mt-2">
-            Hired along side two developers to help shape the future at Sport-Travel, and the companies endovour into a technology first business approach.
+            Hired alongside two developers to help shape the future at Sport-Travel, and the companies endeavour into a technology first business approach. 
             I adopted and owned the legacy codebase and the transition into more sustainable development patterns and technologies. 
           </p>
           <span class="border-vertical"></span>
