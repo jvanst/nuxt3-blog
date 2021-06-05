@@ -43,7 +43,7 @@
     </p>
     <div class="flex flex-wrap mt-3">
       <div class="w-full sm:w-1/2 text-center">
-        <img src="./profile.jpeg" class="w-9/12 mx-auto my-8 rounded" alt="">
+        <img src="./profile.jpeg" class="w-9/12 mx-auto my-8 rounded-lg" alt="">
         <a href="./resume.pdf" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" download>
           <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
           <span>Download Resume</span>
@@ -130,40 +130,81 @@
   <div class="container mx-auto max-w-3xl px-4 my-8">
     <ul>
       <li>
-        <span class="text-xs text-gray-800 uppercase">March 2020 - Present</span>
-        <h2 class="text-2xl">RaceRoster</h2>
-        <h3 class="text-lg text-gray-800">Software Developer</h3>
-        <p class="mt-2">
-          Fullstack developer pushing the legacy code base into more modern technologies and design patterns.
-        </p>
-        <span class="border-vertical"></span>
+        
       </li>
-      <li>
-        <span class="text-xs text-gray-800 uppercase">MAY 2017 - MARCH 2020</span>
-        <h2 class="text-2xl">Sport-Travel</h2>
-        <h3 class="text-lg text-gray-800">Lead Software Developer</h3>
-        <p class="mt-2">
-          I lead the software department at Sport-Travel where I pushed the team to develop scalable lightweight, progressive web applications. 
-          I approached leadership by encouraging idea sharing and regular employee participation. While also trying to lead by going above and beyond.
-          <br><br>
-          Our stack was build on Vue.js, Node.js deployed with CircleCI to Kubernetes on Google Cloud.
-           Our data was stored relationally in mySQL with additional request caching and idempotency keys managed by redis.
-        </p>
-        <span class="border-vertical"></span>
+      <li class="flex">
+        <div class="flex-initial pt-7 mr-3">
+          <img src="/images/raceroster.jpg" alt="RaceRoster logo" class="rounded" width="50px">
+        </div>
+        <div class="flex-1">
+          <span class="text-xs text-gray-800 uppercase">March 2020 - Present</span>
+          <h2 class="text-2xl">RaceRoster</h2>
+          <h3 class="text-lg text-gray-800">Software Developer</h3>
+          <p class="mt-2">
+            At RaceRoster, I spend time where needed to refactor and push the code base into more modern technologies and design patterns. 
+            I'm particularly excited to help improve the developer experience in newer projects by containerizing applications, improving continous integration, and automate testing.
+            <br><br>
+            Common tools include React for the front-end experience, and PHP for backend with increasing shift to Node.js serving RESTful JSON. 
+          </p>
+          <span class="border-vertical"></span>
+        </div>
       </li>
-      <li>
-        <span class="text-xs text-gray-800 uppercase">2015 - 2016</span>
-        <h2 class="text-2xl">DukeToyCo</h2>
-        <h3 class="text-lg text-gray-800">Web Developer Consultant</h3>
-        <p class="mt-2">
-          Responsible for web design, CMS, server administration, and analytics www.duketoyco.com is a toy company based in Toronto Ontario.
-        </p>
-        <span class="border-vertical"></span>
+      <li class="flex">
+        <div class="flex-initial pt-7 mr-3">
+          <img src="/images/sport-travel.png" alt="Sport-Travel logo" class="rounded" width="50px">
+        </div>
+        <div class="flex-1">
+          <span class="text-xs text-gray-800 uppercase">NOVEMBER 2018 - MARCH 2020</span>
+          <h2 class="text-2xl">Sport-Travel</h2>
+          <h3 class="text-lg text-gray-800">Lead Software Developer</h3>
+          <p class="mt-2">
+            I led the software department at Sport-Travel where I pushed the team to develop scalable lightweight, progressive web applications. 
+            I approached leadership by encouraging idea sharing and regular employee participation. While also trying to lead by going above and beyond.
+            <br><br>
+            Our stack was build on Vue.js, Node.js deployed with CircleCI to Kubernetes on Google Cloud. 
+            Our data was stored relationally in MySQL with additional request caching and idempotency keys managed by redis.
+          </p>
+          <span class="border-vertical"></span>
+        </div>
       </li>
-      <li>
-        <span class="text-xs text-gray-800 uppercase">2013 - 2017</span>
-        <h2 class="text-2xl">University of Western Ontario</h2>
-        <h3 class="text-lg text-gray-800">Studied Computer Science</h3>
+      <li class="flex">
+        <div class="flex-initial pt-7 mr-3">
+          <img src="/images/sport-travel.png" alt="Sport-Travel logo" class="rounded" width="50px">
+        </div>
+        <div class="flex-1">
+          <span class="text-xs text-gray-800 uppercase">MAY 2017 - NOVEMBER 2018</span>
+          <h2 class="text-2xl">Sport-Travel</h2>
+          <h3 class="text-lg text-gray-800">Software Developer</h3>
+          <p class="mt-2">
+            Hired along side two developers to help shape the future at Sport-Travel, and the companies endovour into a technology first business approach.
+            I adopted and owned the legacy codebase and the transition into more sustainable development patterns and technologies. 
+          </p>
+          <span class="border-vertical"></span>
+        </div>
+      </li>
+      <li class="flex">
+        <div class="flex-initial pt-7 mr-3">
+          <img src="/images/duketoyco.jpeg" alt="DukeToyCo logo" class="rounded" width="50px">
+        </div>
+        <div class="flex-1">
+          <span class="text-xs text-gray-800 uppercase">2015 - 2016</span>
+          <h2 class="text-2xl">DukeToyCo</h2>
+          <h3 class="text-lg text-gray-800">Web Developer Consultant</h3>
+          <p class="mt-2">
+            Responsible for web design, CMS, server administration, and analytics www.duketoyco.com is a toy company based in Toronto Ontario.
+          </p>
+          <span class="border-vertical"></span>
+        </div>
+      </li>
+      <li class="flex">
+        <div class="flex-initial pt-7 mr-3">
+          <img src="/images/uwo.jpeg" alt="University of Western Ontario logo" class="rounded" width="50px">
+        </div>
+        <div class="flex-1">
+          <span class="text-xs text-gray-800 uppercase">2013 - 2017</span>
+          <h2 class="text-2xl">University of Western Ontario</h2>
+          <h3 class="text-lg text-gray-800">Studied Computer Science</h3>
+        </div>
       </li>
     </ul>
   </div>
@@ -175,11 +216,16 @@
   </div>
   <div class="container mx-auto max-w-3xl px-4 my-8">
     <div class="grid grid-cols-1 gap-4 pb-3">
-      <div class="relative shadow-xs bg-gray-50 p-4">
-        <span class="text-lg font-bold pb-2">radiants.gg</span>
-        <p class="text-sm pb-10">
-          An A.I. driven insight platform for esport players. I am building a product that doesn't just post raw data with no applicability for players but allows players to delve deeper. We plan to provide analysis and insight to users to help increase their rank, adapt to the latest meta changes, and build dynamic team composition.
-        </p>
+      <div class="flex relative shadow-xs bg-gray-50 p-4">
+        <div class="flex-initial mr-3">
+          <img src="/images/radiantsgg.svg" alt="Radiants.gg logo" class="rounded" width="50px">
+        </div>
+        <div class="flex-1">
+          <span class="text-lg font-bold pb-2">Radiants.gg</span>
+          <p class="text-sm pb-10">
+            An A.I. driven insight platform for esport players. I am building a product that doesn't just post raw data with no applicability for players but allows players to delve deeper. We plan to provide analysis and insight to users to help increase their rank, adapt to the latest meta changes, and build dynamic team composition.
+          </p>
+        </div>
         <p class="absolute bottom-0 w-full text-right pb-4 pr-8">
           <a href="https://radiants.gg" target="_blank" rel="noopener" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold text-sm py-1 px-3 rounded inline-flex items-center">
             <span>View</span>
