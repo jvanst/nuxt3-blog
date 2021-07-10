@@ -142,7 +142,7 @@
         </div>
         <div class="flex-1">
           <span class="text-xs text-gray-800 uppercase">March 2020 - Present</span>
-          <h2 class="text-2xl">RaceRoster</h2>
+          <h2 class="text-2xl">ASICS RaceRoster</h2>
           <h3 class="text-lg text-gray-800">Software Developer</h3>
           <p class="mt-2">
             At RaceRoster, I spend time where needed to refactor and push the code base into more modern technologies and design patterns. 
