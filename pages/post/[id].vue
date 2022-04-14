@@ -73,36 +73,41 @@
           <ArrowLeftIcon class="inline-block w-4 h-4 mr-1" />Back to article list
         </NuxtLink>
         <div class="mt-8 flex space-x-1 text-sm text-gray-500">
-          <time :datetime="post.datetime">{{ post.date }}</time>
+          <time :datetime="post.publishedAt">{{ post.publishedAt }}</time>
           <span aria-hidden="true">&middot;</span>
-          <span>{{ post.readingTime }} read</span>
+          <span>{{ post.readtime }} read</span>
         </div>
         <h1 class="mt-2">
           <span
             class="mt-2 block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
           >{{ post.title }}</span>
         </h1>
-        <p class="mt-6 text-xl text-gray-500 leading-8">{{ post.description }}</p>
-        <img class="my-6 h-96 w-full object-cover rounded" :src="post.imageUrl" alt="" />
+        <p class="mt-6 text-xl text-gray-500 leading-8">{{ post.summary }}</p>
+        <img class="my-6 h-96 w-full object-cover rounded" :src="post.mainImage" alt="" />
+
       </div>
-      <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto" v-html="post.content"></div>
+      
+      <div class="mt-6 prose prose-indigo prose-lg mx-auto">
+        <SanityBlocks :blocks="post.body" />
+      </div>
+
       <ProfileCard></ProfileCard>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { SanityBlocks } from 'sanity-blocks-vue-component';
 import { ArrowLeftIcon } from '@heroicons/vue/solid'
 
 const route = useRoute()
-
-// Get post
-let { data: post } = await useFetch<Post>(`/api/post?id=${route.params.id}`)
+const { data } = await useFetch(`https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%20%26%26%20slug.current%20%3D%3D%20%24slug%5D%5B0%5D%7B%0A%20%20...%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset-%3Eurl%0A%7D&%24slug=%22${route.params.id}%22`);
+const post = data.value.result
 
 useMeta({
-  title: post.value.title,
+  title: post.title,
   meta: [
-    { name: 'description', content: post.value.description }
+    { name: 'description', content: post.summary }
   ]
 })
 </script>
