@@ -33,7 +33,7 @@
               <div class="flex-1">
                 <div class="block">
                   <div class="flex space-x-1 text-sm text-gray-500 dark:text-gray-400">
-                    <time :datetime="post.publishedAt">{{ post.publishedAt }}</time>
+                    <time :datetime="post.publishedAt">{{ dayjs(post.publishedAt).format('dddd, MMMM D') }}</time>
                     <span aria-hidden="true">&middot;</span>
                     <span>{{ post.readtime }} read</span>
                   </div>
@@ -53,6 +53,7 @@
 
 <script lang="ts" setup>
 import ProfileCard from '~~/components/ProfileCard.vue';
+import dayjs from 'dayjs'
 
 // Would like to use the sanity client but currently blocked by a nitro build problem
 //

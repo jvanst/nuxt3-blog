@@ -49,7 +49,7 @@
               </p>
               <p class="ml-2 text-md font-medium text-gray-500 dark:text-gray-400">
               <div class="mt-2 flex space-x-1 text-sm">
-                <time :datetime="post.publishedAt">{{ post.publishedAt }}</time>
+                <time :datetime="post.publishedAt">{{ dayjs(post.publishedAt).format('dddd, MMMM D') }}</time>
                 <span aria-hidden="true">&middot;</span>
                 <span>{{ post.readtime }} read</span>
               </div>
@@ -69,7 +69,8 @@
 </template>
 
 <script lang="ts" setup>
-import { SanityBlocks } from 'sanity-blocks-vue-component';
+import dayjs from 'dayjs'
+import { SanityBlocks } from 'sanity-blocks-vue-component'
 import { ArrowLeftIcon } from '@heroicons/vue/solid'
 
 const route = useRoute()
