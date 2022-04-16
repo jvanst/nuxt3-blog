@@ -1,5 +1,5 @@
 <template>
-  <Html lang="en-US">
+  <Html lang="en-US" class="bg-white dark:bg-gray-900">
     <Head>
       <Title>James Vansteenkiste</Title>
       <Meta
