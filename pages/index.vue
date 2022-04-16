@@ -55,6 +55,28 @@
 <script lang="ts" setup>
 import ProfileCard from '~~/components/ProfileCard.vue';
 
+// Would like to use the sanity client but currently blocked by a nitro build problem
+//
+// https://github.com/nuxt/framework/issues/2724 
+//
+// import sanityClient from '@sanity/client';
+// 
+// const client = sanityClient({
+//   projectId: '942rgs6c',
+//   dataset: 'production',
+//   apiVersion: '2022-04-14',
+//   useCdn: true,
+// })
+
+// const posts = await client.fetch(`*[_type == "post"]{
+//   slug,
+//   title,
+//   publishedAt,
+//   readtime,
+//   summary,
+//   "mainImage": mainImage.asset->url
+// }`, {})
+
 const { data } = await useFetch("https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%5D%7B%0A%20%20slug%2C%0A%20%20title%2C%0A%20%20publishedAt%2C%0A%20%20readtime%2C%0A%20%20summary%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset-%3Eurl%0A%7D");
 const posts = data.value.result
 
