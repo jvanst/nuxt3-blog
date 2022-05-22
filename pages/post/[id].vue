@@ -24,7 +24,8 @@
         </svg>
       </div>
     </div>
-    <img class="h-52 lg:h-96 w-full lg:w-3/4 xl:w-3/5 lg:rounded lg:m-auto lg:mt-4 object-cover" :src="post.mainImage" alt="" />
+    <img class="h-52 lg:h-96 w-full lg:w-3/4 xl:w-3/5 lg:rounded lg:m-auto lg:mt-4 object-cover" :src="post.mainImage"
+      alt="" />
     <div class="relative mt-4 px-4 sm:px-6 lg:px-8">
       <div class="text-lg max-w-prose mx-auto">
         <NuxtLink to="/"
@@ -34,10 +35,17 @@
         <h1 class="mt-2">
           <span
             class="mt-2 block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">{{
-              post.title
+                post.title
             }}</span>
         </h1>
         <p class="mt-6 text-xl text-gray-500 dark:text-gray-400 leading-8">{{ post.summary }}</p>
+
+        <div class="mt-2">
+          <span v-for="category in post.categories" :key="category"
+              class="inline-flex items-center px-2.5 py-0.5 mr-2 rounded-full text-xs font-medium bg-indigo-100 dark:bg-indigo-900 text-indigo-00 dark:text-indigo-100">
+              {{ category }} </span>
+        </div>
+ 
         <div class="mt-8 flex-shrink-0 group block">
           <div class="flex items-center">
             <div>
@@ -74,10 +82,11 @@ import { SanityBlocks } from 'sanity-blocks-vue-component'
 import { ArrowLeftIcon } from '@heroicons/vue/solid'
 
 const route = useRoute()
-const { data } = await useFetch(`https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%20%26%26%20slug.current%20%3D%3D%20%24slug%5D%5B0%5D%7B%0A%20%20...%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset-%3Eurl%0A%7D&%24slug=%22${route.params.id}%22`);
+
+const { data } = await useFetch(`https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%20%26%26%20slug.current%20%3D%3D%20%24slug%5D%5B0%5D%7B%0A%20%20...%2C%22categories%22%3A%20categories%5B%5D-%3Etitle%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset-%3Eurl%0A%7D&%24slug=%22${route.params.id}%22`);
 const post = data.value.result
 
-useMeta({
+useHead({
   title: post.title,
   meta: [
     { name: 'description', content: post.summary }
