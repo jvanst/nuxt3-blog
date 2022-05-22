@@ -12,8 +12,7 @@
           <a
             href="https://nestjs.com"
             rel="nofollow"
-          >NestJS</a>,
-          <a href="https://nextjs.org" rel="nofollow">Next.js</a>, and
+          >NestJS</a>, and
           <a href="https://nuxtjs.org" rel="nofollow">NuxtJS</a>.
         </p>
         <img
