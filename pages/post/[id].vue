@@ -73,8 +73,9 @@
     </div>
     <img
       class="h-52 lg:h-96 w-full lg:w-3/4 xl:w-3/5 lg:rounded lg:m-auto lg:mt-4 object-cover"
-      :src="post.mainImage"
+      :src="post.mainImage + '?auto=format&fit=crop&w=900&q=60'"
       alt=""
+      lazy
     />
     <div class="relative mt-4 px-4 sm:px-6 lg:px-8">
       <div class="text-lg max-w-prose mx-auto">

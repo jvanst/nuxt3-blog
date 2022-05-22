@@ -32,8 +32,9 @@
             <div class="flex-shrink-0">
               <img
                 class="h-48 w-full object-cover"
-                :src="post.mainImage"
+                :src="post.mainImage + '?auto=format&fit=crop&w=400&q=60'"
                 alt=""
+                lazy
               />
             </div>
             <div class="flex-1 p-6 flex flex-col justify-between">
