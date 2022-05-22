@@ -21,7 +21,7 @@
         </div>
 
         <div
-          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+          class="mt-12 mx-auto grid gap-5 sm:grid-cols-2 lg:grid-cols-3 max-w-none"
         >
           <NuxtLink
             v-for="post in posts"
