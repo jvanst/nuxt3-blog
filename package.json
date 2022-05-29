@@ -8,13 +8,15 @@
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
-    "nuxt3": "latest",
+    "nuxt": "npm:nuxt3@latest",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.5.5"
   },
   "dependencies": {
     "@headlessui/vue": "^1.5.0",
     "@heroicons/vue": "^1.0.5",
+    "@sanity/client": "^3.3.0",
+    "@sanity/image-url": "^1.0.1",
     "dayjs": "^1.11.1",
     "sanity-blocks-vue-component": "^1.0.1"
   }

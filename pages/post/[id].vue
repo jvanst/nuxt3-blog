@@ -1,5 +1,15 @@
 <template>
   <div class="relative overflow-hidden">
+    <Title>{{ post.title }}</Title>
+    <Meta name="description" :content="post.summary" />
+    <Meta name="image" :content="post.mainImageUrl" />
+    <Meta name="twitter:image" :content="post.mainImageUrl" />
+    <Meta name="twitter:image:alt" :content="post.title" />
+    <Meta name="twitter:card" :content="post.mainImageUrl" />
+    <Meta name="twitter:title" :content="post.title" />
+    <Meta name="twitter:description" :content="post.summary" />
+    <Meta name="twitter:creator" :content="post.author.name" />
+
     <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
       <div
         class="relative h-full text-lg max-w-prose mx-auto"
@@ -71,12 +81,12 @@
         </svg>
       </div>
     </div>
-    <img
+
+    <Image
       class="h-52 lg:h-96 w-full lg:w-3/4 xl:w-3/5 lg:rounded lg:m-auto lg:mt-4 object-cover"
-      :src="post.mainImage + '?auto=format&fit=crop&w=900&q=60'"
-      alt=""
-      lazy
-    />
+      :asset="post.mainImage"
+    ></Image>
+
     <div class="relative mt-4 px-4 sm:px-6 lg:px-8">
       <div class="text-lg max-w-prose mx-auto">
         <NuxtLink
@@ -123,7 +133,7 @@
         </div>
       </div>
       <div class="mt-10 prose dark:prose-invert prose-indigo prose-lg mx-auto">
-        <SanityBlocks :blocks="post.body" />
+        <SanityBlocks :blocks="post.body" :serializers="serializers" />
       </div>
       <ProfileCard></ProfileCard>
     </div>
@@ -132,18 +142,47 @@
 
 <script lang="ts" setup>
 import dayjs from "dayjs";
-import { SanityBlocks } from "sanity-blocks-vue-component";
 import { ArrowLeftIcon } from "@heroicons/vue/solid";
+import { SanityBlocks } from "sanity-blocks-vue-component";
+import { Serializers } from "sanity-blocks-vue-component/dist/types";
+import Quote from "~/components/Quote.vue";
+import Image from "~/components/Image.vue";
 
 const route = useRoute();
 
-const { data } = await useFetch(
-  `https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%20%26%26%20slug.current%20%3D%3D%20%24slug%5D%5B0%5D%7B%0A%20%20...%2C%22categories%22%3A%20categories%5B%5D-%3Etitle%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset-%3Eurl%0A%7D&%24slug=%22${route.params.id}%22`
-);
-const post = data.value.result;
+// Would like to use the sanity client but currently blocked by a nitro build problem
+// https://github.com/nuxt/framework/issues/2724
+//
+// import sanityClient from "@sanity/client";
 
-useHead({
-  title: post.title,
-  meta: [{ name: "description", content: post.summary }],
-});
+// const client = sanityClient({
+//   projectId: "942rgs6c",
+//   dataset: "production",
+//   apiVersion: "2022-04-14",
+//   useCdn: true,
+// });
+// 
+// const query = `*[_type == "post" && slug.current == $slug][0]{
+//   ...,
+//   "categories": categories[]->title,
+//   "mainImageUrl": mainImage.asset->url
+// }`;
+// const post = await client.fetch(query, { slug: route.params.id });
+
+const serializers: Partial<Serializers> = {
+  types: {
+    // @ts-expect-error
+    quote: Quote,
+    // @ts-expect-error
+    image: Image,
+  },
+};
+
+const { data: post } = await useFetch(
+  `https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%20%26%26%20slug.current%20%3D%3D%20%24slug%5D%5B0%5D%7B%0A%20%20...%2C%22categories%22%3A%20categories%5B%5D-%3Etitle%2C%0A%20%20%22mainImageUrl%22%3A%20mainImage.asset-%3Eurl%0A%7D&%24slug=%22${route.params.id}%22`,
+  {
+    transform: (data: { result: Record<any, any> }) => data.result,
+    key: `post-transform-${route.params.id}`,
+  }
+);
 </script>

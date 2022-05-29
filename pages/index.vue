@@ -1,5 +1,7 @@
 <template>
   <div class="px-4 sm:px-6 lg:pb-28 lg:px-8">
+    <Title>Blog - James Vansteenkiste</Title>
+
     <ProfileCard />
 
     <div class="relative pt-8 pb-20">
@@ -30,12 +32,11 @@
             class="flex flex-col dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden"
           >
             <div class="flex-shrink-0">
-              <img
+              <Image
                 class="h-48 w-full object-cover"
-                :src="post.mainImage + '?auto=format&fit=crop&w=400&q=60'"
-                alt=""
-                lazy
-              />
+                :asset="post.mainImage"
+                :width="400"
+              ></Image>
             </div>
             <div class="flex-1 p-6 flex flex-col justify-between">
               <div class="flex-1">
@@ -77,11 +78,10 @@
 </template>
 
 <script lang="ts" setup>
-import ProfileCard from "~~/components/ProfileCard.vue";
+import ProfileCard from "~/components/ProfileCard.vue";
 import dayjs from "dayjs";
 
 // Would like to use the sanity client but currently blocked by a nitro build problem
-//
 // https://github.com/nuxt/framework/issues/2724
 //
 // import sanityClient from '@sanity/client';
@@ -99,15 +99,14 @@ import dayjs from "dayjs";
 //   publishedAt,
 //   readtime,
 //   summary,
-//   "mainImage": mainImage.asset->url
+//   mainImage: mainImage
 // }`, {})
 
-const { data } = await useFetch(
-  "https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%5D%7B%0A%20%20slug%2C%0A%20%20title%2C%0A%20%20publishedAt%2C%0A%20%20readtime%2C%0A%20%20summary%2C%22categories%22%3A%20categories%5B%5D-%3Etitle%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset-%3Eurl%0A%7D"
+const { data: posts } = await useFetch(
+  "https://942rgs6c.apicdn.sanity.io/v2022-04-08/data/query/production?query=*%5B_type%20%3D%3D%20%22post%22%5D%7B%0A%20%20slug%2C%0A%20%20title%2C%0A%20%20publishedAt%2C%0A%20%20readtime%2C%0A%20%20summary%2C%22categories%22%3A%20categories%5B%5D-%3Etitle%2C%0A%20%20%22mainImage%22%3A%20mainImage.asset%0A%7D",
+  {
+    transform: (data: { result: Record<any, any> }) => data.result,
+    key: "posts-transform",
+  }
 );
-const posts = data.value.result;
-
-useHead({
-  title: `Blog - James Vansteenkiste`,
-});
 </script>
