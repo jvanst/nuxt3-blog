@@ -1,7 +1,5 @@
 <template>
   <div class="px-4 sm:px-6 lg:pb-28 lg:px-8">
-    <Title>Blog - James Vansteenkiste</Title>
-
     <ProfileCard />
 
     <div class="relative pt-8 pb-20">
@@ -109,4 +107,10 @@ const { data: posts } = await useFetch(
     key: "posts-transform",
   }
 );
+
+useHead({
+  title: "Blog",
+  description:
+    "I'm a software developer located in Southwestern Ontario, Canada. My passion is building beautiful, highly scalable web applications",
+});
 </script>

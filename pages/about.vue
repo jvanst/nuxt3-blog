@@ -119,6 +119,6 @@
 import { DownloadIcon, ArrowLeftIcon } from "@heroicons/vue/solid";
 
 useHead({
-  title: `About - James Vansteenkiste`,
+  title: "About",
 });
 </script>
