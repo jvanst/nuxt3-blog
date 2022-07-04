@@ -5,7 +5,7 @@
   <h3 align="center">Nuxt3 Blog</h3>
 
   <p align="center">
-     It's a minimal blog built with Nuxt3, deployed on Cloudflare Workers, with content supplied from Sanity.io.
+     A minimal blog built with Nuxt3, deployed on Cloudflare Workers, with content supplied from Sanity.io.
   </p>
 </div>
 
